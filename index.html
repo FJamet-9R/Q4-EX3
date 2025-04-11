@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">	
+	<title></title>
+</head>
+<body>
+	<div class="container mb-5 mt-5 pt-5 pb-5">
+		<h1>Lets Check our Earthquake strengths!</h1>
+			<div class="enter">
+				<label>Enter Magnitude:</label>	
+				<input type="number" id="mag" name="inputMag">	
+		</div>
+		<hr>
+		<div>
+			<button type="button" onclick="checkMag()">Check</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+			function checkMag(){
+				var inputMag = document.getElementById('mag').value;
+
+				if(inputMag>=8){
+					window.alert('Catastrophic!');
+				}
+
+				else if(inputMag>=7 && inputMag<=7.9){
+					window.alert('Major Damage');
+				}
+
+				else if(inputMag>=6.1 && inputMag<=6.9){
+					window.alert('Damage Likely');
+				}
+
+				else if(inputMag>=5.5 && inputMag<=6.0){
+					window.alert('Slight Damage');
+				}
+
+				else if(inputMag>=2.5 && inputMag<=5.4){
+					window.alert('Rare Damage');
+				}
+
+				else {
+					window.alert('Not usually felt');
+				}
+			}
+
+
+	</script>
+
+</body>
+</html>

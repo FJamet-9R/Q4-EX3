@@ -1,0 +1,21 @@
+body{
+	background-color: #f9eae1;
+}
+
+h1{
+	color:#780000;
+}
+
+.container{
+	margin: 130px;
+	margin-left: 200px;
+	margin-right: 200px;
+	background-color: white;
+  width: 400px;
+  height: 300px;
+  border: medium solid;
+  border-color: #780000;
+  padding-right: 100px;
+  align-content: center;
+  padding-left: 100px;
+}
